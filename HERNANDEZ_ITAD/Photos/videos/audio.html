@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base target="sameWin">
+    <meta charset="UTF-8" />
+    <style type="text/css">
+        h1 {
+            font-size: 50px;
+            font-family: Georgia;
+            color: black;
+            text-shadow: 2px 2px 4px rgba(255, 64, 129, 0.5);
+            margin: 20px 0;
+            padding: 15px;
+        }
+
+        h2{
+            font-size: 45px;
+            font-family: Georgia;
+            color: black;
+            text-shadow: 2px 2px 4px rgba(255, 64, 129, 0.5);
+            margin: 20px 0;
+            padding: 15px;
+
+}
+        h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 2px;
+            font-size: 30px;
+        }
+
+        
+        h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+        }
+       
+
+        .genres {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        body {
+            font-size: 18px;
+            font-family: Tahoma;
+            text-align: center;
+            background-color: black;
+            padding: 50px;
+            margin: 0;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .genres li a {
+            color: white;
+            text-decoration: underline;
+            font-size: 35px;
+            padding: 15px 150px;
+            border-radius: 10px;
+            background-color: #ED7BAB;
+        }
+
+        .genres li {
+            margin: 0 20px;
+        }
+
+        .white {
+            background-color: #F5D3DD;
+            padding-bottom: 50px;
+        }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: justify;
+        }
+
+        .tops {
+            margin-top: 2px;
+            text-align: right;
+            color: white;
+            text-shadow: none;
+            padding: 10px 15px;
+            border-radius: 50px;
+            background-color: #ED7BAB;
+            border-radius: 5px;
+            float: right;
+            margin-right: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .songs {
+            background-color: #ED7BAB;
+            padding: 30px;
+            padding-bottom: 150px;
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .song-info {
+            color: white;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .song-info h2,
+        .song-info h3 {
+            margin: 10px 0;
+        }
+
+        .song img {
+            width: 300px;
+            height: 250px;
+            border-radius: 20px; /* Make the image circular */
+            margin-bottom: 10px;
+        }
+
+        .left {
+            text-align: left;
+            margin-bottom: 0px;
+        }
+    </style>
+    <title>Audio</title>
+</head>
+
+<body id="top">
+    <div class="white">
+        <div class="audio">
+            <h1>Serene Soundscape</h1>
+            <hr color="black" ; size="10" ;>
+            <ul class="genres">
+                <li><a href="#Pop">Pop Music</a></li>
+                <li><a href="#Jazz">Jazz Music</a></li>
+                <li><a href="#OPM">OPM Music</a></li>
+            </ul>
+            <hr color="black" ; size="10" ;>
+            <div id="Pop">
+                <h2 class="left">Pop Music</h2>
+                <div class="container">
+                    <div class="songs">
+                        <div class="song-info">
+                            <div class="song">
+                                <a href="AUDIO/pop/lovestory.jpg" title="Love Story" target="sameWin"><img
+                                        src="AUDIO/pop/lovestory.jpg" alt="Love Story"></a>
+                                <h3>Love Story</h3>
+                                <h4>by Taylor Swift</h4>
+                                <audio controls>
+                                    <source src="AUDIO/pop/Taylor Swift - Love Story (mp3cut.net).mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pop Container 2 -->
+                    <div class="songs">
+                        <div class="song-info">
+                            <div class="song">
+                                <a href="AUDIO/pop/style.jpg" title="Style" target="sameWin"><img
+                                        src="AUDIO/pop/style.jpg" alt="Style"></a>
+                                <h3>Style</h3>
+                                <h4>by Taylor Swift</h4>
+                                <audio controls>
+                                    <source
+                                        src="AUDIO/pop/Taylor Swift - Style (Taylor's Version) (Lyric Video) (mp3cut.net).mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="songs">
+                        <div class="song-info">
+                            <div class="song">
+                                <a href="AUDIO/pop/ybwm.jpg" title="You Belong With Me" target="sameWin"><img
+                                        src="AUDIO/pop/ybwm.jpg" alt="You Belong With Me"></a>
+                                <h3>You Belong With Me</h3>
+                                <h4>by Taylor Swift</h4>
+                                <audio controls>
+                                    <source src="AUDIO/pop/you belong with me (mp3cut.net).mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#Jazz" class="tops">Next</a>
+            <a href="#top" class="tops">Go to Top</a>
+            <div id="Jazz">
+                <h2 class="left">Jazz Music</h2>
+                <div class="container">
+                    <div class="songs">
+                        <div class="song-info">
+                            <div class="song">
+                                <a href="AUDIO/jazz/fmttm.jpg" title="Fly Me To The Moon" target="sameWin"><img
+                                        src="AUDIO/jazz/fmttm.jpg" alt="Fly Me To The Moon"></a>
+                                <h3>Fly Me To The Moon</h3>
+                                <h4>by Frank Sinatra</h4>
+                                <audio controls>
+                                    <source
+                                        src="AUDIO/jazz/Frank Sinatra - Fly Me To The Moon (LYRICS) (mp3cut.net).mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="songs">
+                        <div class="song-info">
+                            <div class="song">
+                                <a href="AUDIO/jazz/iy.jpg" title="I'm Yours" target="sameWin"><img
+                                        src="AUDIO/jazz/iy.jpg" alt="I'm Yours"></a>
+                                <h3>I'm Yours</h3>
+                                <h4>by Jason Mraz</h4>
+                                <audio controls>
+                                    <source
+                                        src="AUDIO/jazz/JASON MRAZ - I'm Yours (Lyrics Video) ＂Well open up your mind and see like me＂ (mp3cut.net).mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="songs">
+                        <div class="song-info">
+                            <div class="song">
+                                <a href="AUDIO/jazz/jttos.jpg" title="Just The Two Of Us" target="sameWin"><img
+                                        src="AUDIO/jazz/jttos.jpg" alt="Just The Two of Us"></a>
+                                <h3>Just The Two of Us</h3>
+                                <h4>by Bill Withers</h4>
+                                <audio controls>
+                                    <source
+                                        src="AUDIO/jazz/Bill Withers  - Just The Two Of Us (Lyrics) (mp3cut.net).mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#OPM" class="tops">Next</a>
+            <a href="#top" class="tops">Go to Top</a>
+            
+           
+            <div id="OPM">
+                <h2 class="left">OPM Music</h2>
+                <div class="container">
+                    <div class="songs">
+                        <div class="song-info">
+                            <div class="song">
+                                <a href="AUDIO/opm/was.jpg" title="With A Smile" target="sameWin"><img
+                                        src="AUDIO/opm/was.jpg" alt="With A Smile"></a>
+                                <h3>With A Smile</h3>
+                                <h4>Eraserheads</h4>
+                                <audio controls>
+                                    <source
+                                        src="AUDIO/opm/With A Smile - Eraserheads (Lyrics) (mp3cut.net).mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="songs">
+                        <div class="song-info">
+                            <div class="song">
+                                <a href="AUDIO/opm/fallen.jpg" title="Fallen" target="sameWin"><img
+                                        src="AUDIO/opm/fallen.jpg" alt="Fallen"></a>
+                                <h3>Fallen</h3>
+                                <h4>by Cup of Joe</h4>
+                                <audio controls>
+                                    <source
+                                        src="AUDIO/opm/Lola Amour - Fallen (Official Lyric Video) (mp3cut.net).mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="songs">
+                        <div class="song-info">
+                            <div class="song">
+                                <a href="AUDIO/opm/ys.jpg" title="Your Song" target="sameWin"><img
+                                        src="AUDIO/opm/ys.jpg" alt="Your Song"></a>
+                                <h3>Your Song</h3>
+                                <h4>by Parokya ni Edgar</h4>
+                                <audio controls>
+                                    <source
+                                        src="AUDIO/opm/Your Song - Parokya Ni Edgar (Lyrics) (mp3cut.net).mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="../../Initial_Landing_Page.html" class="tops">Home</a>
+            <a href="#top" class="tops">Go to Top</a>
+        </div>
+    </div>
+</body>
+
+</html>
