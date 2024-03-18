@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base target="sameWin">
+    <meta charset="UTF-8" />
+    <style type="text/css">
+        h1 {
+            font-size: 50px;
+            font-family: Georgia;
+            color: black;
+            text-shadow: 2px 2px 4px rgba(255, 64, 129, 0.5);
+            margin: 20px 0;
+            padding: 15px;
+        }
+
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 2px;
+            font-size: 40px;
+            color: black;
+            text-shadow: 2px 2px 4px rgba(255, 64, 129, 0.5);
+            margin: 20px 0;
+            padding: 15px;
+        }
+
+        h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+        }
+
+        .genres {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        body {
+            font-size: 18px;
+            font-family: Tahoma;
+            text-align: center;
+            background-color: #F5D3DD;
+            padding: 50px;
+            margin: 0;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border: 50px solid black;
+        }
+
+        .genres li a {
+            color: white;
+            text-decoration: underline;
+            font-size: 35px;
+            padding: 15px 150px;
+            border-radius: 10px;
+            background-color: #ED7BAB;
+        }
+
+        .genres li {
+            margin: 0 20px;
+        }
+
+        .white {
+            background-color: #F5D3DD;
+            padding-bottom: 50px;
+        }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: justify;
+        }
+
+        .tops {
+            margin-top: 2px;
+            text-align: right;
+            color: white;
+            text-shadow: none;
+            padding: 10px 15px;
+            border-radius: 50px;
+            background-color: #ED7BAB;
+            border-radius: 5px;
+            float: right;
+            margin-right: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .videos-container {
+            background-color: #ED7BAB;
+            padding: 30px; /* Adjust padding to fit within the background color and border */
+            margin: 15px; /* Adjust margin to fit within the background color and border */
+            border: 2px solid #F5D3DD;
+            border-radius: 10px;
+            width: 48%; /* Adjust width here */
+            max-width: 600px; /* Set a maximum width */
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            flex: 1 0 auto; /* Adjust flex properties */
+        }
+
+        video {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            width: 100%; /* Adjust width here */
+            max-width: 100%; /* Ensure video does not exceed container width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .videos-container h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .videos-container h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+
+        .videos-container p {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%; /* Adjust width here */
+        }
+
+        .left {
+            text-align: left;
+            margin-bottom: 0px;
+        }
+
+        .movie-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .top-link {
+            margin-top: 2px;
+            text-align: right;
+            color: white;
+            text-shadow: none;
+            padding: 10px 15px;
+            border-radius: 50px;
+            background-color: #ED7BAB;
+            border-radius: 5px;
+            float: right;
+            margin-right: 10px;
+        }
+
+        
+    </style>
+    <title>Videos</title>
+</head>
+
+<body id="top">
+    <div class="white">
+        <div class="header">
+            <h1>Screen Delights: Must-Watch Masterpieces</h1>
+            <hr color="black" size="10">
+            <ul class="genres">
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#tvshows">TV Shows</a></li>
+            </ul>
+            <hr color="black" size="10">
+        </div>
+
+        <div class="container">
+            <div id="movies">
+                <h2 class="left">Movies</h2>
+                <div class="movie-row">
+                    <div class="videos-container">
+                        <h3>Along for the Ride</h3>
+                        <p>Director: Sofia Alvarez</p>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="VIDEOS/movies/Along for the Ride ｜ Official Trailer ｜ Netflix.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="videos-container">
+                        <h3>Anyone But You</h3>
+                        <p>Director: Will Gluck</p>
+                        <div class="video-container">
+                            <video controls>
+                                <source
+                                    src="VIDEOS/movies/ANYONE BUT YOU Trailer (2023) Sydney Sweeney.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <a href="#tvshows" class="top-link">Next</a>
+                <a class="top-link" href="#top">Go to Top</a>
+            </div>
+
+            <div id="tvshows">
+                <h2 class="left">TV Shows</h2>
+                <div class="movie-row">
+                    <div class="videos-container">
+                        <h3>Manifest</h3>
+                        <p>Program Creator: Jeff Rake</p>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="VIDEOS/tv shows/Manifest Season 1 Trailer ｜ Rotten Tomatoes TV.mp4"
+                                    type="video/mp4" >
+                            </video>
+                        </div>
+                    </div>
+                    <div class="videos-container">
+                        <h3>The Good Doctor</h3>
+                        <p>Program creators: Daniel Dae Kim, David Shore</p>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="VIDEOS/tv shows/The Good Doctor – Official Trailer.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <a href="../../Initial_Landing_Page.html" class="top-link">Home</a>
+                <a class="top-link" href="#top">Go to Top</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
